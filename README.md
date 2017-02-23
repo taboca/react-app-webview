@@ -14,9 +14,12 @@ The source is here for a few reasons:
 
 ## Main changes
 
-* Even thought I believe that nothing malicious was in the sample of React-native Facebook code [1](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/js/WebViewExample.js), yet I have simplified the web view, just to avoid the names that were in the code, such as the keyword "inject". 
+* Even thought I believe that nothing malicious was in the sample of React-native Facebook code [1](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/js/WebViewExample.js);
+* Yet I have simplified the webview sample, simply to avoid the names that were in the code, such as the keyword "injectJS" — as I believe your system may have been triggered by an english word; 
+* The diff is here [2](https://github.com/taboca/react-app-webview/commit/4bac4ec1798bb73e8e417271c96ce156c2a62962 )
 
 ## References 
 
-* [1](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/js/WebViewExample.js)
-* 
+* [1 - prior main source](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/js/WebViewExample.js)
+* [2 - new main source](https://github.com/taboca/react-app-webview/commit/4bac4ec1798bb73e8e417271c96ce156c2a62962)
+ 
