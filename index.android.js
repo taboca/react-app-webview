@@ -1,5 +1,6 @@
 /**
- * Sample React Native App
+ * Originally, sample from React Native,
+ * Simplified to have more limited webview
  * https://github.com/facebook/react-native
  * @flow
  */
@@ -28,13 +29,13 @@ export default class AwesomeProject extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <WebViewExample />
+        <WebViewRuntime/>
       </View>
     );
   }
 }
 
-class WebViewExample extends React.Component {
+class WebViewRuntime extends React.Component {
   state = {
     url: DEFAULT_URL,
     status: 'No Page Loaded',
@@ -133,6 +134,13 @@ var styles = StyleSheet.create({
   webView: {
     backgroundColor: BGWASH,
     height: 350,
+  },  //
+  statusBar: {
+    padding:10,
+    backgroundColor:'gray',
+  },
+  statusBarText: {
+    color:'white'
   },
   spinner: {
     width: 20,
@@ -142,6 +150,6 @@ var styles = StyleSheet.create({
 
 exports.displayName = (undefined: ?string);
 exports.title = '<WebView>';
-exports.description = 'Displaying my own web content'
+exports.description = 'Displaying LPeU feed web content'
 
 AppRegistry.registerComponent('LpeuLive', () => AwesomeProject);
